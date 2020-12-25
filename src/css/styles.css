@@ -94,3 +94,8 @@ html {
 .icon {
   @apply fill-current text-theme-gray-light dark:text-theme-blue-base hover:text-theme-aquamarine dark:hover:text-light-primary;
 }
+
+.restricted {
+  min-width: 160px;
+  min-height: 160px;
+}

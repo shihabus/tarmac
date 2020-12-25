@@ -1465,6 +1465,11 @@ html {
   color: rgba(255, 0, 0, var(--tw-text-opacity));
 }
 
+.restricted {
+  min-width: 160px;
+  min-height: 160px;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
