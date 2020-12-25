@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Shihab" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1"
+    />
+
+    <title>Shihab | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Shihabudheen US, is a Frontend developer from India. Working with JavaScript for the past 3 years."
+    />
+    <meta
+      name="keywords"
+      content="shihab, shihabudheen, resume, portfolio, react, react native, frontend, developer, software, india"
+    />
+    <link rel="canonical" href="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/public/images/logo.png" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Raishop" />
+    <meta name="og:description" content="" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="theme-color" content="#0a192f" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="20x20"
+      href="/public/images/favicon.png"
+    />
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/public/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-theme-blue-deep relative dark">
+   
+
+    <header class="sticky top-0 bg-theme-blue-deep blur z-10">
+      <div class="max-w-screen-xl mx-auto" x-data="{mobileMenuOpen: false}">
+        <div class="flex items-center justify-between pt-5 pb-6 px-5">
+          <div>
+            <a href="#intro">
+              <svg class="h-15" viewBox="0 0 1543 1922" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M602.575 1047.97l486.835 859.19-1079.554.8 592.719-859.99z" class="fill-current text-lg-tail dark:text-dark-tail"/><path d="M472.758 1236.39l616.652 670.77-1079.553.8 462.901-671.57z" class="fill-current text-lg-shadow dark:text-dark-shadow"  fill-opacity=".28"/><path d="M5.936 1.884l978.318-.725 557.406 944.657-452.54 962.384L5.936 1.884z" class="fill-current text-lg-head"/></svg>
+            </a>
+          </div>
+          <div class="-mr-2 -my-2 md:hidden">
+            <button
+              @click="mobileMenuOpen = true"
+              type="button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-theme-aquamarine focus:outline-none transition duration-150 ease-in-out"
+            >
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="flex text-sm items-center hidden md:block">
+            <a
+              href="#about"
+              class="text-theme-gray-light hover:text-theme-aquamarine mr-4"
+              ><span class="text-theme-aquamarine mr-2">01.</span
+              ><span>About</span></a
+            >
+            <a
+              href="#work"
+              class="text-theme-gray-light hover:text-theme-aquamarine mr-4"
+              ><span class="text-theme-aquamarine mr-2">02.</span
+              ><span>Experience</span></a
+            >
+            <a
+              href="#skills"
+              class="text-theme-gray-light hover:text-theme-aquamarine mr-4"
+              ><span class="text-theme-aquamarine mr-2">03.</span
+              ><span>Skills</span></a
+            >
+            <a
+              href="#contact"
+              class="text-theme-gray-light hover:text-theme-aquamarine mr-4"
+              ><span class="text-theme-aquamarine mr-2">04.</span
+              ><span>Contact</span></a
+            >
+            <a
+              href="https://drive.google.com/file/d/1ioDOxAznkX-9-IVgydnyLzpFo6PaV_qs/view"
+              target="_blank"
+              class="text-theme-aquamarine px-4 py-2 border border-theme-aquamarine rounded"
+              >Resume</a
+            >
+          </div>
+          <div
+            x-show="mobileMenuOpen"
+            @click.away="mobileMenuOpen = false"
+            class="absolute z-20  top-0 inset-x-0 transition transform origin-top-right md:hidden"
+          >
+            <div class="rounded-b-lg shadow-lg">
+              <div class="shadow-lg bg-theme-blue-base">
+                <div class="pt-5 pb-6 px-5 space-y-6 sm:space-y-8 sm:pb-8">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <img
+                        class="h-10 w-10"
+                        src="public/images/favicon.png"
+                      />
+                    </div>
+                    <div class="-mr-2">
+                      <button
+                        @click="mobileMenuOpen = false"
+                        type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-theme-gray-deep hover:text-theme-aquamarine hover:bg-theme-blue-base focus:outline-none focus:bg-theme-blue-base focus:text-theme-aquamarine transition duration-150 ease-in-out"
+                      >
+                        <svg
+                          class="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div>
+                    <nav class="space-y-8">
+                      <div
+                        class="grid gap-7 sm:grid-cols-2 sm:row-gap-8 sm:col-gap-4"
+                      >
+                        <a
+                          href="#about"
+                          class="text-theme-gray-light hover:text-theme-aquamarine"
+                          ><span class="text-theme-aquamarine mr-2">01.</span
+                          ><span>About</span></a
+                        >
+                        <a
+                          href="#work"
+                          class="text-theme-gray-light hover:text-theme-aquamarine"
+                          ><span class="text-theme-aquamarine mr-2">02.</span
+                          ><span>Experience</span></a
+                        >
+                        <a
+                          href="#skills"
+                          class="text-theme-gray-light hover:text-theme-aquamarine"
+                          ><span class="text-theme-aquamarine mr-2">03.</span
+                          ><span>Skills</span></a
+                        >
+                        <a
+                          href="#contact"
+                          class="text-theme-gray-light hover:text-theme-aquamarine"
+                          ><span class="text-theme-aquamarine mr-2">04.</span
+                          ><span>Contact</span></a
+                        >
+                        <a
+                        href="https://drive.google.com/file/d/1ioDOxAznkX-9-IVgydnyLzpFo6PaV_qs/view"
+                        target="_blank"
+                          class="text-theme-aquamarine px-4 py-2 border border-theme-aquamarine rounded"
+                          >Resume</a
+                        >
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- social media -->
+    <div class="fixed bottom-6 ml-6 border-r border-red-500 hidden flex-col w-13 justify-end xl:flex">
+      <p class="transform -rotate-90 whitespace-no-wrap mb-10 mt-36 text-theme-gray-deep">Social media handlers</p>
+      <!-- dev.to -->
+      <a href="https://dev.to/codermonkey" target="_blank" rel="noopener noreferrer">
+        <svg class="fill-current text-green-600 w-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"  style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.73 11.93c0 1.72-.02 1.83-.23 2.07c-.19.17-.38.23-.76.23l-.51.01l-.03-2.27l-.02-2.27h.52c.35 0 .6.07.77.21c.24.21.26.25.26 2.02M22 7.5v9c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2v-9c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2M8.93 11.73c-.03-1.84-.05-1.99-.29-2.39c-.4-.68-.85-.84-2.36-.84H5v7h1.21c1.33 0 1.89-.17 2.29-.71c.41-.53.5-.98.43-3.06m4.19-3.23h-1.48c-1.49 0-1.5 0-1.71.28S9.7 9.21 9.7 12v2.96l.27.27c.25.27.31.27 1.71.27h1.44v-1.19l-1.09-.04l-1.1-.03V12.6l.68-.03l.66-.04v-1.19h-1.39V9.7h2.24V8.5m5.88.06c0-.06-.3-.06-.66-.06l-.68.06l-.59 2.35c-.38 1.48-.62 2.27-.67 2.13c-.08-.27-1.14-4.44-1.14-4.49c0-.05-.31-.05-.68-.05h-.69l.41 1.55c.2.87.59 2.28.81 3.15c.34 1.35.46 1.65.75 1.94c.2.22.45.36.61.36c.33 0 .76-.34.9-.73C17.5 14.5 19 8.69 19 8.56z"/></svg>
+      </a>
+      <!-- git -->
+      <a href="https://github.com/shihabus" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-green-600 w-8 mt-10 mb-12" viewBox="0 0 438.536 438.536"><path d="M158.173 352.599c-3.049.568-4.381 1.999-3.999 4.281.38 2.283 2.093 3.046 5.138 2.283 3.049-.76 4.38-2.095 3.997-3.997-.378-2.092-2.091-2.95-5.136-2.567zM141.898 354.885c-3.046 0-4.568 1.041-4.568 3.139 0 2.474 1.619 3.518 4.853 3.138 3.046 0 4.57-1.047 4.57-3.138 0-2.471-1.619-3.522-4.855-3.139zM119.629 354.022c-.76 2.095.478 3.519 3.711 4.284 2.855 1.137 4.664.568 5.424-1.714.572-2.091-.666-3.61-3.711-4.568-2.856-.759-4.663-.102-5.424 1.998z"/><path d="M414.41 24.123C398.326 8.042 378.964 0 356.309 0H82.225C59.577 0 40.208 8.042 24.123 24.123 8.042 40.207 0 59.576 0 82.225v274.088c0 22.65 8.042 42.017 24.123 58.098 16.084 16.084 35.454 24.126 58.102 24.126h63.953c4.184 0 7.327-.144 9.42-.424 2.092-.288 4.184-1.526 6.279-3.717 2.096-2.187 3.14-5.376 3.14-9.562 0-.568-.05-7.046-.144-19.417-.097-12.375-.144-22.176-.144-29.41l-6.567 1.143c-4.187.76-9.469 1.095-15.846.999-6.374-.096-12.99-.76-19.841-1.998-6.855-1.239-13.229-4.093-19.13-8.562-5.898-4.477-10.085-10.328-12.56-17.559l-2.856-6.571c-1.903-4.373-4.899-9.229-8.992-14.554-4.093-5.332-8.232-8.949-12.419-10.852l-1.999-1.428c-1.331-.951-2.568-2.098-3.711-3.429-1.141-1.335-1.997-2.669-2.568-3.997-.571-1.335-.097-2.43 1.427-3.289 1.524-.855 4.281-1.279 8.28-1.279l5.708.855c3.808.76 8.516 3.042 14.134 6.851 5.614 3.806 10.229 8.754 13.846 14.843 4.38 7.806 9.657 13.75 15.846 17.843 6.184 4.097 12.419 6.143 18.699 6.143s11.704-.476 16.274-1.424c4.565-.954 8.848-2.385 12.847-4.288 1.713-12.751 6.377-22.559 13.988-29.41-10.848-1.143-20.602-2.854-29.265-5.14-8.658-2.286-17.605-5.995-26.835-11.136-9.234-5.14-16.894-11.512-22.985-19.13-6.09-7.618-11.088-17.61-14.987-29.978-3.901-12.375-5.852-26.652-5.852-42.829 0-23.029 7.521-42.637 22.557-58.814-7.044-17.32-6.379-36.732 1.997-58.242 5.52-1.714 13.706-.428 24.554 3.855 10.85 4.286 18.794 7.951 23.84 10.992 5.046 3.042 9.089 5.614 12.135 7.71 17.705-4.949 35.976-7.423 54.818-7.423 18.841 0 37.115 2.474 54.821 7.423l10.849-6.852c7.426-4.57 16.18-8.757 26.269-12.562 10.088-3.806 17.795-4.854 23.127-3.14 8.562 21.51 9.328 40.922 2.279 58.241 15.036 16.179 22.559 35.786 22.559 58.815 0 16.18-1.951 30.505-5.852 42.969-3.898 12.467-8.939 22.463-15.13 29.981-6.184 7.519-13.894 13.843-23.124 18.986-9.232 5.137-18.178 8.853-26.84 11.132-8.661 2.286-18.414 4.004-29.263 5.147 9.891 8.562 14.839 22.072 14.839 40.538v68.238c0 3.237.472 5.852 1.424 7.851.958 1.998 2.478 3.374 4.571 4.141 2.102.76 3.949 1.235 5.571 1.424 1.622.191 3.949.287 6.995.287h63.953c22.648 0 42.018-8.042 58.095-24.126 16.084-16.084 24.126-35.454 24.126-58.102V82.225c-.002-22.649-8.044-42.021-24.125-58.102z"/><path d="M86.793 319.195c-1.331.948-1.141 2.471.572 4.565 1.906 1.902 3.427 2.189 4.57.855 1.331-.948 1.141-2.471-.575-4.569-1.902-1.71-3.424-1.997-4.567-.851zM77.374 312.057c-.57 1.335.096 2.478 1.999 3.426 1.521.955 2.762.767 3.711-.568.57-1.335-.096-2.478-1.999-3.433-1.903-.572-3.14-.38-3.711.575zM95.646 330.331c-1.715.948-1.715 2.666 0 5.137 1.713 2.478 3.328 3.142 4.853 1.998 1.714-1.334 1.714-3.142 0-5.427-1.521-2.468-3.14-3.046-4.853-1.708zM105.641 343.174c-1.714 1.526-1.336 3.327 1.142 5.428 2.281 2.279 4.185 2.566 5.708.849 1.524-1.519 1.143-3.326-1.142-5.42-2.281-2.28-4.185-2.568-5.708-.857z"/></svg></a>
+      <!-- twitter -->
+      <a href="https://twitter.com/type___error" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-green-600 w-8"  viewBox="0 0 504.4 504.4"><path d="M377.6.2H126.4C56.8.2 0 57 0 126.6v251.6c0 69.2 56.8 126 126.4 126H378c69.6 0 126.4-56.8 126.4-126.4V126.6C504 57 447.2.2 377.6.2zm-.4 188.8v8.4c0 84-64.8 180.8-183.6 180.8-36.4 0-70.4-10.4-98.8-28.4 5.2.4 10 .8 15.2.8 30.4 0 58-10 80-27.2-28.4-.4-52-18.8-60.4-44 4 .8 8 1.2 12 1.2 6 0 12-.8 17.2-2.4-28.8-6-50.8-31.6-50.8-62.4v-.8c8 4.8 18.4 7.6 28.8 8-17.2-11.2-28.8-30.8-28.8-52.8 0-11.6 3.2-22.4 8.8-32 32 38.4 79.2 63.6 132.8 66.4-1.2-4.8-1.6-9.6-1.6-14.4 0-35.2 28.8-63.6 64.4-63.6 18.4 0 35.2 7.6 47.2 20 14.8-2.8 28.4-8 40.8-15.6-4.8 14.8-15.2 27.2-28.4 35.2 13.2-1.6 25.6-4.8 37.2-10-8.8 12.8-19.6 24-32 32.8z"/></svg>
+      </a>
+      <!-- linkedIN -->
+      <a href="https://www.linkedin.com/in/shihabus/" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current text-green-600 w-8 mt-12 mb-2"  viewBox="0 0 510 510"><path d="M459 0H51C22.95 0 0 22.95 0 51v408c0 28.05 22.95 51 51 51h408c28.05 0 51-22.95 51-51V51c0-28.05-22.95-51-51-51zM153 433.5H76.5V204H153v229.5zm-38.25-272.85c-25.5 0-45.9-20.4-45.9-45.9s20.4-45.9 45.9-45.9 45.9 20.4 45.9 45.9-20.4 45.9-45.9 45.9zM433.5 433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25 17.851-38.25 38.25V433.5H204V204h76.5v30.6c12.75-20.4 40.8-35.7 63.75-35.7 48.45 0 89.25 40.8 89.25 89.25V433.5z"/></svg>
+      </a>
+    </div>
+
+    
+
+    <!-- jumbo -->
+    <section id="intro" class="pt-20">
+      <div class="max-w-5xl mx-auto px-6 xl:px-0">
+        <h4 class="text-theme-aquamarine mb-3">✋, I am</h4>
+        <h1
+          class="text-theme-gray-light mb-3 text-2xl sm:text-6xl font-poppins font-black"
+        >
+          Shihab
+          <span class="text-sm">[he/him]</span>
+        </h1>
+        <h1
+          class="text-theme-gray-deep mb-8 text-2xl sm:text-6xl font-poppins font-black"
+        >
+          I code 🌈 UI
+        </h1>
+        <div class="w-full sm:w-1/2 mb-12">
+          <p class="text-theme-gray-deep leading-relaxed">
+            In ♥️ JS since 2017 and always ⚡ reactive.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="inline-block text-theme-aquamarine px-6 py-4 border border-theme-aquamarine rounded"
+          >Get In Touch</a
+        >
+      </div>
+    </section>
+    <!-- #jumbo -->
+
+    <!-- about -->
+    <section id="about" class="pt-40">
+      <div class="max-w-5xl mx-auto px-6 xl:px-0">
+        <header class="mb-16">
+          <h3 class="text-2xl font-poppins text-theme-gray-light">
+            <span class="font-bold">About Me</span>
+          </h3>
+        </header>
+        <div class="flex flex-wrap items-center">
+          <div class="w-full sm:w-1/2 order-last sm:order-first">
+            <p class="text-theme-gray-deep leading-relaxed mb-3">
+              Hi, I'm Shihabudheen US, aka Shihab.
+            </p>
+            <p class="text-theme-gray-deep leading-relaxed mb-3">
+              I am working with JavaScript for the past 3 years. Currently I
+              work with
+              <a
+                href="https://www.dunzo.com/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-theme-aquamarine font-medium"
+                >Dunzo</a
+              >.
+            </p>
+            <p class="text-theme-gray-deep leading-relaxed mb-3">
+              My experience with MNC makes me process oriented and my experience
+              with startups makes me a hustler. I always set my bar higher, and
+              I am continuously striving to reach it. Always driven by the
+              manthra,
+              <span class="font-medium leading-relaxed">Dare to Dream</span>!
+            </p>
+            <p class="text-theme-gray-deep leading-relaxed mb-3">
+              I get my hands dirty trying out the cooler stuff. I learn thing
+              quick(atleast I pretend so), and learning is always my passion.
+              Without getting updated, your are going outdated.
+            </p>
+          </div>
+          <div
+            class="w-full sm:w-1/2 flex items-center justify-center mb-6 sm:mb-0"
+          >
+            <div class="w-1/2 flex justify-center">
+              <div class="border-2 border-theme-aquamarine rounded">
+                <img
+                  src="public/images/shihab.png"
+                  class="-mt-6 -ml-6 mb-6 mr-6 w-full h-auto rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #about -->
+
+    <!-- experience -->
+    <section id="work" class="pt-40">
+      <div class="max-w-5xl mx-auto px-6 xl:px-0">
+        <div class="flex justify-center">
+          <div class="w-full sm:w-2/3">
+            <header class="mb-16">
+              <h3 class="text-2xl font-poppins text-theme-gray-light">
+                <span class="font-bold">Where I've Worked</span>
+              </h3>
+            </header>
+            <div class="flex flex-wrap" x-data="{currentExperience: 'dunzo'}">
+              <div class="w-full sm:w-1/6 mb-4 sm:mb-0">
+                <div class="flex flex-row sm:flex-col overflow-x-auto">
+                  <a
+                    href="#"
+                    @click.prevent="currentExperience = 'dunzo'"
+                    :class="{' border-theme-aquamarine text-theme-aquamarine ' : currentExperience === 'dunzo'}"
+                    class="border-gray-600 text-theme-gray-dark text-theme-gray-deep px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 text-xs hover:bg-theme-gray-light hover:bg-opacity-25"
+                    >Dunzo</a
+                  >
+                  <a
+                    href="#"
+                    @click.prevent="currentExperience = 'bounce'"
+                    :class="{' border-theme-aquamarine text-theme-aquamarine ' : currentExperience === 'bounce'}"
+                    class="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-gray-600 text-xs hover:bg-theme-gray-light hover:bg-opacity-25 text-theme-gray-deep"
+                    >Bounce</a
+                  >
+                  <a
+                    href="#"
+                    @click.prevent="currentExperience = 'quest'"
+                    :class="{' border-theme-aquamarine text-theme-aquamarine ' : currentExperience === 'quest'}"
+                    class="px-4 py-3 border-b-4 sm:border-b-0 border-l-0 sm:border-l-2 border-gray-600 text-xs hover:bg-theme-gray-light hover:bg-opacity-25 text-theme-gray-deep"
+                    >QuEST Global</a
+                  >
+                </div>
+              </div>
+              <div class="w-full sm:w-5/6">
+                <div class="px-0 sm:px-6">
+                  <!--dunzo-->
+                  <div x-show="currentExperience === 'dunzo'">
+                    <header class="mb-6">
+                      <h3
+                        class="text-xl font-poppins text-theme-gray-light font-bold mb-1"
+                      >
+                        Frontend Developer<span
+                          class="text-theme-aquamarine mx-3"
+                          >@</span
+                        ><a
+                          href="https://www.dunzo.com/about"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-theme-aquamarine hover:underline"
+                          >Dunzo</a
+                        >
+                      </h3>
+                      <p class="text-theme-gray-deep mb-3 text-xs">
+                        Apr 2020 - Present
+                      </p>
+                    </header>
+                    <div>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        Dunzo is the new name for India's hyper local delivery
+                        platform. We help people to
+                        <span class="font-medium">get things dun!</span>.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        With a growing delivery partner network currently we
+                        operates in 7 major Indian cities. Monthly we see +2Mn
+                        transactions in our platform.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        I was mostly working on Dunzo web, design system and
+                        Google Spot apps. Being India's first Google backed
+                        startup, I was able to work on lot of cool Google stuff.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        The stack and techs we used at Dunzo are:
+                      </p>
+                      <div class="flex flex-wrap text-theme-gray-deep">
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >JavaScript
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Next.js
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Redux Saga
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Node.js
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Storybook
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Webpack
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Styled Components
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--#dunzo-->
+
+                  <!--bounce-->
+                  <div x-show="currentExperience === 'bounce'">
+                    <header class="mb-6">
+                      <h3
+                        class="text-xl font-poppins text-theme-gray-light font-bold mb-1"
+                      >
+                        Software Engineer<span
+                          class="text-theme-aquamarine mx-3"
+                          >@</span
+                        ><a
+                          href="https://bounceshare.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-theme-aquamarine hover:underline"
+                          >Bounce</a
+                        >
+                      </h3>
+                      <p class="text-theme-gray-deep mb-3 text-xs">
+                        Jul 2019 - Feb 2020
+                      </p>
+                    </header>
+                    <div>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        Bounce is a Bangalore-based startup that operates more
+                        than 50K electric and gasoline dockless bikes and
+                        scooters in nearly three dozen cities in India.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        At Bounce we were trying to create a task engine to
+                        monitor and manage cluster level operations and issue
+                        ticket management. We were also working on internal
+                        dashboards and monitoring tools for Operations team.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        Tech stack:
+                      </p>
+                      <div class="flex flex-wrap text-theme-gray-deep">
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >JavaScript
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >React
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Redux Saga
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Storybook
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Styled Components
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Retool
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--#bounce-->
+
+                  <!-- quest -->
+                  <div x-show="currentExperience === 'quest'">
+                    <header class="mb-6">
+                      <h3
+                        class="text-xl font-poppins text-theme-gray-light font-bold mb-1"
+                      >
+                        Software Engineer<span
+                          class="text-theme-aquamarine mx-3"
+                          >@</span
+                        ><a
+                          href="https://www.quest-global.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-theme-aquamarine hover:underline"
+                          >QuEST Global</a
+                        >
+                      </h3>
+                      <p class="text-theme-gray-deep mb-3 text-xs">
+                        Aug 2017 - May 2019
+                      </p>
+                    </header>
+                    <div>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        QuEST Global is a pioneer in the engineering services
+                        sector. We served many engineering verticals, from
+                        Defence to Aerospace, from Mechanical to Rails. QuEST
+                        has a vivid customer base, which include bigger names in
+                        the market like GE, Pratt & Whitney, Airbus and
+                        Bombardier, to name a few.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        I believe QuEST was the best place to start my career
+                        journey. The plethora of projects helped me learn and
+                        explore a lot.
+                      </p>
+                      <p class="text-theme-gray-deep leading-relaxed mb-3">
+                        At QuEST mainly I was working on:
+                      </p>
+                      <div class="flex flex-wrap text-theme-gray-deep">
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Python
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >JavaScript
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >React Native
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Redux
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Django
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >C#
+                        </p>
+                        <p class="w-1/2 sm:w-2/5">
+                          <span
+                            class="font-black text-theme-aquamarine text-xs mr-3"
+                            >&gt;</span
+                          >Kubernetes
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--#quest-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #experience -->
+
+    <!-- skills -->
+    <section id="skills" class="pt-40">
+      <div class="max-w-5xl mx-auto px-6 xl:px-0">
+        <header class="mb-16">
+          <h3
+            class="text-3xl font-poppins text-theme-gray-light font-extrabold"
+          >
+            <span class="font-bold"></span>Skills
+          </h3>
+        </header>
+
+        <div class="flex flex-wrap justify-center  text-theme-gray-deep">
+          <!-- js -->
+          <div
+            class="bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/js.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl  bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                JavaScript
+              </div>
+            </div>
+          </div>
+          <!-- #js -->
+          <!-- react -->
+          <div
+            class="bg-gray-100 rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/react.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                React
+              </div>
+            </div>
+          </div>
+          <!-- #react -->
+          <!-- redux -->
+          <div
+            class="bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/redux.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                Redux
+              </div>
+            </div>
+          </div>
+          <!-- #redux -->
+          <!-- html -->
+          <div
+            class="bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/html.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                HTML
+              </div>
+            </div>
+          </div>
+          <!-- #html -->
+          <!-- redux saga-->
+          <div
+            class=" bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/reduxSaga.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                Redux Saga
+              </div>
+            </div>
+          </div>
+          <!-- #redux saga-->
+          <!-- github-->
+          <div
+            class="bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/github.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                GitHub
+              </div>
+            </div>
+          </div>
+          <!-- #github-->
+          <!-- storybook-->
+          <div
+            class="bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/storybook.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl bg-gray-100 opacity-75 p-0.5 flex justify-center items-center  text-blue-700"
+              >
+                Storybook
+              </div>
+            </div>
+          </div>
+          <!-- #storybook-->
+          <!-- css-->
+          <div
+            class=" bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/css.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl flex justify-center items-center  text-blue-700 bg-gray-100 opacity-75 p-0.5"
+              >
+                CSS
+              </div>
+            </div>
+          </div>
+          <!-- #css-->
+          <!-- css-->
+          <div
+            class="bg-gray-100  rounded-md p-2 flex flex-col justify-center m-4 relative"
+          >
+            <div class="flex justify-center items-center ">
+              <img
+                class="object-cover"
+                src="/public/images/webpack.png"
+                alt="JavaScript script"
+                height="100"
+              />
+              <div
+                class="rounded-md absolute font-bold text-xl  flex justify-center items-center  text-blue-700 bg-gray-100 opacity-75 p-0.5"
+              >
+                Webpack
+              </div>
+            </div>
+          </div>
+          <!-- #css-->
+
+
+        </div>
+        
+    </section>
+    <!-- #skills -->
+
+    <!-- contact -->
+    <section id="contact" class="py-64">
+      <div class="max-w-5xl mx-auto px-6 xl:px-0">
+        <header class="mb-16 text-center">
+          <h4 class="text-theme-aquamarine text-base mb-3">What's Next?</h4>
+          <h3
+            class="text-5xl font-poppins text-theme-gray-light font-extrabold"
+          >
+            Get In Touch
+          </h3>
+        </header>
+        <div class="flex justify-center mb-20">
+          <div class="w-full sm:w-2/3 text-center">
+            <p class="text-theme-gray-deep">
+              If you find my work and profile interesting, I don't mind getting connected in LinkedIn, stars on GitHub, follows on Twitter and hearts on Dev.to. 
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center mb-10 flex-wrap items-center align-middle xl:hidden">
+          <a class="inline-block" href="https://dev.to/codermonkey" target="_blank" rel="noopener noreferrer">
+            <svg class="fill-current hover:text-theme-green text-theme-aquamarine w-20 my-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false"  style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.73 11.93c0 1.72-.02 1.83-.23 2.07c-.19.17-.38.23-.76.23l-.51.01l-.03-2.27l-.02-2.27h.52c.35 0 .6.07.77.21c.24.21.26.25.26 2.02M22 7.5v9c0 1.11-.89 2-2 2H4c-1.11 0-2-.89-2-2v-9c0-1.11.89-2 2-2h16c1.11 0 2 .89 2 2M8.93 11.73c-.03-1.84-.05-1.99-.29-2.39c-.4-.68-.85-.84-2.36-.84H5v7h1.21c1.33 0 1.89-.17 2.29-.71c.41-.53.5-.98.43-3.06m4.19-3.23h-1.48c-1.49 0-1.5 0-1.71.28S9.7 9.21 9.7 12v2.96l.27.27c.25.27.31.27 1.71.27h1.44v-1.19l-1.09-.04l-1.1-.03V12.6l.68-.03l.66-.04v-1.19h-1.39V9.7h2.24V8.5m5.88.06c0-.06-.3-.06-.66-.06l-.68.06l-.59 2.35c-.38 1.48-.62 2.27-.67 2.13c-.08-.27-1.14-4.44-1.14-4.49c0-.05-.31-.05-.68-.05h-.69l.41 1.55c.2.87.59 2.28.81 3.15c.34 1.35.46 1.65.75 1.94c.2.22.45.36.61.36c.33 0 .76-.34.9-.73C17.5 14.5 19 8.69 19 8.56z"/></svg>
+          </a>
+          <!-- git -->
+          <a  class="inline-block" href="https://github.com/shihabus" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="fill-current hover:text-theme-green text-theme-aquamarine w-12 mx-10 my-4" viewBox="0 0 438.536 438.536"><path d="M158.173 352.599c-3.049.568-4.381 1.999-3.999 4.281.38 2.283 2.093 3.046 5.138 2.283 3.049-.76 4.38-2.095 3.997-3.997-.378-2.092-2.091-2.95-5.136-2.567zM141.898 354.885c-3.046 0-4.568 1.041-4.568 3.139 0 2.474 1.619 3.518 4.853 3.138 3.046 0 4.57-1.047 4.57-3.138 0-2.471-1.619-3.522-4.855-3.139zM119.629 354.022c-.76 2.095.478 3.519 3.711 4.284 2.855 1.137 4.664.568 5.424-1.714.572-2.091-.666-3.61-3.711-4.568-2.856-.759-4.663-.102-5.424 1.998z"/><path d="M414.41 24.123C398.326 8.042 378.964 0 356.309 0H82.225C59.577 0 40.208 8.042 24.123 24.123 8.042 40.207 0 59.576 0 82.225v274.088c0 22.65 8.042 42.017 24.123 58.098 16.084 16.084 35.454 24.126 58.102 24.126h63.953c4.184 0 7.327-.144 9.42-.424 2.092-.288 4.184-1.526 6.279-3.717 2.096-2.187 3.14-5.376 3.14-9.562 0-.568-.05-7.046-.144-19.417-.097-12.375-.144-22.176-.144-29.41l-6.567 1.143c-4.187.76-9.469 1.095-15.846.999-6.374-.096-12.99-.76-19.841-1.998-6.855-1.239-13.229-4.093-19.13-8.562-5.898-4.477-10.085-10.328-12.56-17.559l-2.856-6.571c-1.903-4.373-4.899-9.229-8.992-14.554-4.093-5.332-8.232-8.949-12.419-10.852l-1.999-1.428c-1.331-.951-2.568-2.098-3.711-3.429-1.141-1.335-1.997-2.669-2.568-3.997-.571-1.335-.097-2.43 1.427-3.289 1.524-.855 4.281-1.279 8.28-1.279l5.708.855c3.808.76 8.516 3.042 14.134 6.851 5.614 3.806 10.229 8.754 13.846 14.843 4.38 7.806 9.657 13.75 15.846 17.843 6.184 4.097 12.419 6.143 18.699 6.143s11.704-.476 16.274-1.424c4.565-.954 8.848-2.385 12.847-4.288 1.713-12.751 6.377-22.559 13.988-29.41-10.848-1.143-20.602-2.854-29.265-5.14-8.658-2.286-17.605-5.995-26.835-11.136-9.234-5.14-16.894-11.512-22.985-19.13-6.09-7.618-11.088-17.61-14.987-29.978-3.901-12.375-5.852-26.652-5.852-42.829 0-23.029 7.521-42.637 22.557-58.814-7.044-17.32-6.379-36.732 1.997-58.242 5.52-1.714 13.706-.428 24.554 3.855 10.85 4.286 18.794 7.951 23.84 10.992 5.046 3.042 9.089 5.614 12.135 7.71 17.705-4.949 35.976-7.423 54.818-7.423 18.841 0 37.115 2.474 54.821 7.423l10.849-6.852c7.426-4.57 16.18-8.757 26.269-12.562 10.088-3.806 17.795-4.854 23.127-3.14 8.562 21.51 9.328 40.922 2.279 58.241 15.036 16.179 22.559 35.786 22.559 58.815 0 16.18-1.951 30.505-5.852 42.969-3.898 12.467-8.939 22.463-15.13 29.981-6.184 7.519-13.894 13.843-23.124 18.986-9.232 5.137-18.178 8.853-26.84 11.132-8.661 2.286-18.414 4.004-29.263 5.147 9.891 8.562 14.839 22.072 14.839 40.538v68.238c0 3.237.472 5.852 1.424 7.851.958 1.998 2.478 3.374 4.571 4.141 2.102.76 3.949 1.235 5.571 1.424 1.622.191 3.949.287 6.995.287h63.953c22.648 0 42.018-8.042 58.095-24.126 16.084-16.084 24.126-35.454 24.126-58.102V82.225c-.002-22.649-8.044-42.021-24.125-58.102z"/><path d="M86.793 319.195c-1.331.948-1.141 2.471.572 4.565 1.906 1.902 3.427 2.189 4.57.855 1.331-.948 1.141-2.471-.575-4.569-1.902-1.71-3.424-1.997-4.567-.851zM77.374 312.057c-.57 1.335.096 2.478 1.999 3.426 1.521.955 2.762.767 3.711-.568.57-1.335-.096-2.478-1.999-3.433-1.903-.572-3.14-.38-3.711.575zM95.646 330.331c-1.715.948-1.715 2.666 0 5.137 1.713 2.478 3.328 3.142 4.853 1.998 1.714-1.334 1.714-3.142 0-5.427-1.521-2.468-3.14-3.046-4.853-1.708zM105.641 343.174c-1.714 1.526-1.336 3.327 1.142 5.428 2.281 2.279 4.185 2.566 5.708.849 1.524-1.519 1.143-3.326-1.142-5.42-2.281-2.28-4.185-2.568-5.708-.857z"/></svg></a>
+          <!-- twitter -->
+          <a class="inline-block" href="https://twitter.com/type___error" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current hover:text-theme-green text-theme-aquamarine w-12 my-4"  viewBox="0 0 504.4 504.4"><path d="M377.6.2H126.4C56.8.2 0 57 0 126.6v251.6c0 69.2 56.8 126 126.4 126H378c69.6 0 126.4-56.8 126.4-126.4V126.6C504 57 447.2.2 377.6.2zm-.4 188.8v8.4c0 84-64.8 180.8-183.6 180.8-36.4 0-70.4-10.4-98.8-28.4 5.2.4 10 .8 15.2.8 30.4 0 58-10 80-27.2-28.4-.4-52-18.8-60.4-44 4 .8 8 1.2 12 1.2 6 0 12-.8 17.2-2.4-28.8-6-50.8-31.6-50.8-62.4v-.8c8 4.8 18.4 7.6 28.8 8-17.2-11.2-28.8-30.8-28.8-52.8 0-11.6 3.2-22.4 8.8-32 32 38.4 79.2 63.6 132.8 66.4-1.2-4.8-1.6-9.6-1.6-14.4 0-35.2 28.8-63.6 64.4-63.6 18.4 0 35.2 7.6 47.2 20 14.8-2.8 28.4-8 40.8-15.6-4.8 14.8-15.2 27.2-28.4 35.2 13.2-1.6 25.6-4.8 37.2-10-8.8 12.8-19.6 24-32 32.8z"/></svg>
+          </a>
+          <!-- linkedIN -->
+          <a class="inline-block" href="https://www.linkedin.com/in/shihabus/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current hover:text-theme-green text-theme-aquamarine w-12 mx-10 my-4"  viewBox="0 0 510 510"><path d="M459 0H51C22.95 0 0 22.95 0 51v408c0 28.05 22.95 51 51 51h408c28.05 0 51-22.95 51-51V51c0-28.05-22.95-51-51-51zM153 433.5H76.5V204H153v229.5zm-38.25-272.85c-25.5 0-45.9-20.4-45.9-45.9s20.4-45.9 45.9-45.9 45.9 20.4 45.9 45.9-20.4 45.9-45.9 45.9zM433.5 433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25 17.851-38.25 38.25V433.5H204V204h76.5v30.6c12.75-20.4 40.8-35.7 63.75-35.7 48.45 0 89.25 40.8 89.25 89.25V433.5z"/></svg>
+          </a>
+        </div>
+        <div class="text-center">
+          <a
+            href="#"
+            class="inline-block text-theme-aquamarine px-6 py-4 border border-theme-aquamarine rounded"
+            >Say Hello</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- #contact -->
+
+    <!-- footer -->
+    <section id="credits" class="py-8">
+      <div class="max-w-5xl mx-auto px-6 xl:px-0">
+        <div class="w-full text-center">
+          <a
+            href="#"
+            class="text-xs text-theme-gray-deep hover:text-theme-aquamarine"
+          >
+            Re-designed and built by Shihab
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- #footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"
+      defer
+    ></script>
+  </body>
+</html>
