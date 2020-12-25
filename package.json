@@ -1,25 +1,22 @@
 {
-	"name": "tailwind",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "npm run development",
-		"development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"watch": "npm run development -- --watch",
-		"hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-		"prod": "npm run production",
-		"production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-	},
-	"keywords": [],
-	"author": "shihab",
-	"license": "ISC",
-	"devDependencies": {
-		"cross-env": "^7.0.2",
-		"laravel-mix": "^5.0.4"
-	},
-	"dependencies": {
-		"@tailwindcss/ui": "^0.4.0",
-		"tailwindcss": "^1.9.6"
-	}
+  "name": "portfolio-tailwind",
+  "version": "1.0.0",
+  "description": "```bash # install dependencies $ npm install",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/css/styles.css -o public/css/styles.css",
+    "production":"NODE_ENV=production npx tailwindcss-cli@latest build src/css/styles.css -o public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-shihabuudheen:shihabus/tarmac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
+  }
 }

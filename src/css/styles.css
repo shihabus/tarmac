@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.smooth-scrolled {
+  scroll-margin-top: 6em;
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+  opacity: 0.95;
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+}
+
+.ball {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translatex(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.nav-link {
+  @apply text-theme-gray-light dark:text-theme-blue-base hover:text-theme-aquamarine dark:hover:text-light-primary mr-4 tracking-wider uppercase;
+}
+
+.button {
+  @apply text-theme-aquamarine dark:text-light-primary px-4 py-2 border border-theme-aquamarine rounded uppercase hover:text-white dark:border-light-primary dark:hover:text-white dark:hover:bg-light-primary;
+}
+
+.gary-light-text {
+  @apply text-theme-gray-light dark:text-theme-blue-base;
+}
+
+.aqua-text {
+  @apply text-theme-aquamarine dark:text-light-primary;
+}
+
+.aqua-border {
+  @apply border-theme-aquamarine dark:border-light-primary;
+}
+
+.card-container {
+  @apply bg-gray-100 dark:bg-light-bg  rounded-md p-2 flex flex-col justify-center m-4 relative;
+}
+
+.icon {
+  @apply fill-current text-theme-gray-light dark:text-theme-blue-base hover:text-theme-aquamarine dark:hover:text-light-primary;
+}

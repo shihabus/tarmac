@@ -16,6 +16,9 @@ module.exports = {
         "lg-shadow": "#9AF0D1",
         "lg-tail": "#19AE78",
         "lg-head": "#2BF4AC",
+        "light-bg": "#F2F8FF",
+        "light-text": "#0D0D0D",
+        "light-primary": "#FF0000",
         "dark-shadow": "#E62F2F",
         "dark-tail": "#F09A9A",
         "dark-head": "#FF0000",
@@ -23,6 +26,6 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/ui")],
+  plugins: [],
   darkMode: "class",
 };

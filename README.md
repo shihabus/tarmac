@@ -4,9 +4,9 @@
 # install dependencies
 $ npm install
 
-# Development build
-$ npm run dev
+# CSS development build
+$ npm run build-css
 
-# Production build
-$ npm run prod
+# CSS production build
+$ npm run production
 ```
